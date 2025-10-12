@@ -1,69 +1,75 @@
 # 🌅 Sunset Forecast & Journal App
 
-This is a desktop application built with Python and PySide6 that provides sunset and sunrise times, current weather conditions, a basic sunset quality prediction, and a unique "BeReal-like" journaling feature to capture and store your daily sunset photos and thoughts in a calendar format.
+A **Python + PySide6** desktop application that provides real-time **sunset and sunrise forecasts**, **weather conditions**, and a **“BeReal-like” journaling feature** to capture and reflect on your daily sunsets — all displayed in an intuitive calendar view.
 
-✨ Features
-Geographical Sunset/Sunrise Forecast: Get accurate sunrise and sunset times for any location (by city name or latitude/longitude).
+---
 
-Real-time Weather Tracking: Display current weather conditions (clouds, humidity, visibility, temperature) for the specified location.
+## ✨ Features
 
-Sunset Quality Prediction (Basic & AI Placeholder):
+### 🌇 Geographical Forecast
+- Accurate **sunrise and sunset times** for any location (by city or coordinates).
 
-Basic Logic: A rule-based system to predict sunset quality based on weather parameters.
+### 🌤️ Real-time Weather Tracking
+- Displays **current weather data** including clouds, humidity, visibility, and temperature.
 
-AI Placeholder: Structure in place to integrate a more sophisticated Machine Learning model for enhanced predictions in the future.
+### 🌈 Sunset Quality Prediction
+- **Basic Logic:** Rule-based system estimating sunset quality using weather parameters.  
+- **AI Placeholder:** Framework ready for future integration of a machine learning model for enhanced prediction accuracy.
 
-Daily Sunset Journal (BeReal-like):
+### 📸 Daily Sunset Journal
+- Upload a **photo and caption** of your daily sunset.  
+- Entries are saved locally in a **SQLite database**.  
+- Acts as a digital “BeReal-like” sunset diary.
 
-Post a photo of your daily sunset.
+### 📅 Calendar Journal View
+- Browse past sunset posts in an **interactive calendar**.  
+- Click a date to view the photo, caption, and recorded weather/prediction data.
 
-Add a caption to describe your experience.
+---
 
-Entries are stored locally in a SQLite database.
+## 🧭 How to Use
 
-Calendar Journal View:
+### 🕓 Forecast Tab
+1. Enter a **city name** or **latitude, longitude** coordinates.  
+2. Click **Go** or press Enter to fetch **sunset, sunrise, and weather data**.  
+3. Use **Refresh Data** to update information.  
+4. View predictions for **Basic** and **AI** sunset quality.
 
-Browse your past sunset entries in an intuitive calendar format.
+### 📷 Post Sunset Tab
+1. Click **Select Photo** to upload your sunset image.  
+2. Add a **caption** describing your experience.  
+3. Click **Post Sunset** to save your entry — automatically linked with current weather and forecast data.
 
-Click on a date to view the photo, caption, and associated weather/quality data for that day.
+### 📖 Journal Calendar Tab
+- Highlighted days show when entries were posted.  
+- Click a date to view its **photo**, **caption**, and **associated weather/prediction** details.
 
+---
 
-📝 How to Use
-Forecast Tab:
+## 💡 Future Enhancements
 
-Enter a city name or a latitude, longitude pair in the input field.
+- 🤖 **Advanced AI Model:** Integrate ML (TensorFlow / PyTorch) for high-accuracy sunset predictions using satellite and atmospheric data.  
+- 📸 **Webcam Capture:** Allow direct photo uploads from webcam.  
+- 🗺️ **Interactive Map:** Select locations visually.  
+- 🔔 **Daily Notifications:** Remind users to post sunsets.  
+- 👤 **User Accounts:** Add multi-user support and secure login.  
+- ☁️ **Cloud Sync:** Enable backups via Firebase or AWS S3.  
+- 📊 **Data Visualization:** Add charts for sunset quality trends.
 
-Click "Go" or press Enter to fetch sunset times and weather data for that location.
+---
 
-Click "Refresh Data" to update the information for the current location.
+## 🛠️ Tech Stack
 
-Observe the "Sunset Quality (Basic)" and "Sunset Quality (AI)" predictions.
+- **Language:** Python  
+- **Framework:** PySide6 (Qt for Python)  
+- **Database:** SQLite  
+- **APIs:** Weather & Geolocation APIs  
+- **Tools:** Pillow, Requests, Matplotlib (planned for visualization)
 
-Post Sunset Tab:
+---
 
-Click "Select Photo" to choose a sunset image from your computer.
+## 📫 Connect
 
-Add a descriptive caption in the text area.
-
-Click "Post Sunset" to save your entry to the journal. The app will automatically associate the current location and weather data from the "Forecast" tab with your post.
-
-Journal Calendar Tab:
-
-The calendar will highlight days for which you have posted a sunset entry.
-
-Click on a highlighted date to view the photo, caption, and associated weather and quality information for that specific sunset.
-
-💡 Future Enhancements
-Advanced AI Model: Train a more sophisticated ML model (e.g., using TensorFlow or PyTorch) for highly accurate sunset quality predictions, potentially incorporating satellite imagery or more detailed atmospheric data.
-
-Webcam Integration: Allow users to capture photos directly from their webcam for the "Post Sunset" feature.
-
-Interactive Map: Integrate a map widget to visually select locations.
-
-Notifications: Implement daily reminders to post a sunset.
-
-User Accounts: For multi-user support (if desired, would require a more robust database/backend).
-
-Cloud Sync: Sync journal entries to a cloud service (e.g., Firebase, AWS S3) for backup and cross-device access.
-
-Data Visualization: Add charts or graphs to visualize sunset quality trends over time.
+- **LinkedIn:** [linkedin.com/in/filippo-di-marzio](https://www.linkedin.com/in/filippo-di-marzio)  
+- **GitHub:** [github.com/Filippo-Dimarzio](https://github.com/Filippo-Dimarzio)  
+- **Email:** fdmvlogs@gmail.com
